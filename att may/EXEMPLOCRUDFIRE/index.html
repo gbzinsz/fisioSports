@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD com Firebase</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>CRUD com Firebase</h2>
+      <hr />
+      <br />
+      <div class="form">
+        Número de Identificação: <input type="text" name="RollNo" id="roll" /> <br /><br />
+        Nome:&nbsp; <input type="text" name="name" id="name" /> <br /><br />
+        Gênero: <input type="text" name="gender" id="gender" /> <br /><br />
+        Endereço: <input type="text" name="Address" id="address" /> <br /><br />
+      </div>
+
+      <div class="buttons">
+        <button id="insert">Inserir</button>
+        <button id="read">Visualizar</button>
+        <button id="update">Atualizar</button>
+        <button id="delete">Excluir</button>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+    <script src="fireConfig.js"></script>
+    <script src="myscript.js"></script>
+  </body>
+</html>
